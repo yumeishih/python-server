@@ -1,5 +1,5 @@
 from flask_script import Manager, Server
-from main import app
+from api.endpoints import app
 
 manager = Manager(app)
 manager.add_command('server', Server())
